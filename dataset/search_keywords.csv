@@ -1,0 +1,101 @@
+id,keyword,product,product_category,brand
+1,Apple iPad Pro,Tablet,Electronics,Apple
+2,Canon DSLR camera,DSLR Camera,Electronics,Canon
+3,wooden wardrobe,Wardrobe,Furniture,
+4,stainless steel kitchen sink,Kitchen Sink,Kitchenware,
+5,Asus ZenBook laptop,Laptop,Electronics,Asus
+6,ceramic dinnerware set,Dinnerware Set,Kitchenware,
+7,Lego Star Wars set,Toy,Other Categories,Lego
+8,Nikon binoculars,Binoculars,Other Categories,Nikon
+9,Sony 65 inch 4K TV,TV,Electronics,Sony
+10,sewing machine with accessories,Sewing Machine,Other Categories,
+11,Patagonia hiking backpack,Hiking Backpack,Clothing,Patagonia
+12,cozy blanket for winter,Blanket,Home Appliances,
+13,Nike yoga pants,Yoga Pants,Clothing,Nike
+14,Cuisinart food processor,Food Processor,Kitchenware,Cuisinart
+15,Oak wood coffee table,Coffee Table,Furniture,
+16,stainless steel pressure cooker,Pressure Cooker,Kitchenware,
+17,drone with HD camera,Drone,Other Categories,
+18,Sony PlayStation 5,Gaming Console,Electronics,Sony
+19,Nike sports bra,Sports Bra,Clothing,Nike
+20,Nikon D3500 DSLR camera,DSLR Camera,Electronics,Nikon
+21,adjustable computer desk,Computer Desk,Furniture,
+22,Kenwood kitchen machine,Kitchen Machine,Kitchenware,Kenwood
+23,Braun coffee maker,Coffee Maker,Kitchenware,Braun
+24,gardening tool set,Gardening Tools,Other Categories,
+25,Tefal non-stick wok,Wok,Kitchenware,Tefal
+26,mountain climbing gear,Climbing Gear,Other Categories,
+27,ceramic non-stick cookware set,Cookware Set,Kitchenware,
+28,Levis denim jeans,Jeans,Clothing,Levis
+29,Philips electric toothbrush,Electric Toothbrush,Electronics,Philips
+30,telescope for stargazing,Telescope,Other Categories,
+31,stainless steel mixing bowls,Mixing Bowls,Kitchenware,
+32,Pet grooming kit,Grooming Kit,Other Categories,
+33,Instant Pot multi-cooker,Multi-Cooker,Kitchenware,Instant Pot
+34,Samsung smart refrigerator,Smart Refrigerator,Home Appliances,Samsung
+35,Nike sports jacket,Sports Jacket,Clothing,Nike
+36,Calvin Klein women's coat,Women's Coat,Clothing,Calvin Klein
+37,Panasonic microwave oven,Microwave Oven,Kitchenware,Panasonic
+38,Panasonic home theater system,Home Theater System,Electronics,Panasonic
+39,H&M summer dress,Summer Dress,Clothing,H&M
+40,Lenovo ThinkPad X1,Laptop,Electronics,Lenovo
+41,office chair with lumbar support,Office Chair,Furniture,
+42,ceramic bakeware set,Bakeware Set,Kitchenware,
+43,Schwinn road bike,Road Bike,Other Categories,Schwinn
+44,inflatable kayak,Kayak,Other Categories,
+45,camping tent for 4 people,Camping Tent,Other Categories,
+46,electric standing desk,Standing Desk,Furniture,
+47,Sealy posturepedic mattress,Mattress,Furniture,Sealy
+48,Braun electric shaver,Electric Shaver,Electronics,Braun
+49,Adidas soccer ball,Soccer Ball,Clothing,Adidas
+50,Beats wireless headphones,Wireless Headphones,Electronics,Beats
+51,Champion sweatpants,Sweatpants,Clothing,Champion
+52,Apple iPhone 13,Mobile Phone,Electronics,Apple
+53,Ralph Lauren polo shirt,Polo Shirt,Clothing,Ralph Lauren
+54,silk bedsheets,Bedsheets,Home Appliances,
+55,stainless steel cookware set,Cookware Set,Kitchenware,
+56,Breville espresso machine,Espresso Machine,Kitchenware,Breville
+57,JBL soundbar,Soundbar,Electronics,JBL
+58,Samsung QLED TV,TV,Electronics,Samsung
+59,Nikon telephoto lens,Camera Lens,Other Categories,Nikon
+60,Under Armour workout gear,Workout Gear,Clothing,Under Armour
+61,Samsung 4K UHD TV,TV,Electronics,Samsung
+62,orthopedic memory foam mattress,Memory Foam Mattress,Furniture,
+63,Rolex Submariner watch,Watch,Other Categories,Rolex
+64,Acer Predator gaming PC,Gaming PC,Electronics,Acer
+65,Tempur-Pedic memory foam pillow,Memory Foam Pillow,Home Appliances,Tempur-Pedic
+66,Fitbit Versa 3,Fitness Tracker,Other Categories,Fitbit
+67,fishing rod and reel,Fishing Rod,Other Categories,
+68,LG refrigerator,Refrigerator,Home Appliances,LG
+69,Asus ROG gaming monitor,Gaming Monitor,Electronics,Asus
+70,Bose home speaker,Home Speaker,Electronics,Bose
+71,Dell Inspiron 15 laptop,Laptop,Electronics,Dell
+72,Serta memory foam mattress,Memory Foam Mattress,Furniture,Serta
+73,LG sound system,Sound System,Electronics,LG
+74,Samsung washer dryer combo,Washer Dryer Combo,Home Appliances,Samsung
+75,Skechers walking shoes,Walking Shoes,Clothing,Skechers
+76,KitchenAid stand mixer,Stand Mixer,Kitchenware,KitchenAid
+77,Whirlpool washing machine,Washing Machine,Home Appliances,Whirlpool
+78,Logitech wireless keyboard,Wireless Keyboard,Electronics,Logitech
+79,Bose Bluetooth speaker,Bluetooth Speaker,Electronics,Bose
+80,Bosch dishwasher,Dishwasher,Kitchenware,Bosch
+81,Sony mirrorless camera,Mirrorless Camera,Electronics,Sony
+82,Calvin Klein men's suit,Men's Suit,Clothing,Calvin Klein
+83,acoustic guitar for beginners,Acoustic Guitar,Other Categories,
+84,Apple AirPods Pro,Wireless Earbuds,Electronics,Apple
+85,Tefal nonstick frying pan,Frying Pan,Kitchenware,Tefal
+86,adjustable office chair,Office Chair,Furniture,
+87,Apple MacBook Pro,Laptop,Electronics,Apple
+88,Puma running shoes,Running Shoes,Clothing,Puma
+89,cozy wool throw blanket,Throw Blanket,Home Appliances,
+90,HP wireless printer,Printer,Electronics,HP
+91,leather recliner chair,Recliner Chair,Furniture,
+92,Samsung microwave,Microwave,Kitchenware,Samsung
+93,hiking boots waterproof,Hiking Boots,Other Categories,
+94,Sony Bravia 4K TV,TV,Electronics,Sony
+95,Under Armour running shoes,Running Shoes,Clothing,Under Armour
+96,wooden dining table,Dining Table,Furniture,
+97,Brother laser printer,Laser Printer,Electronics,Brother
+98,Whirlpool refrigerator,Refrigerator,Home Appliances,Whirlpool
+99,Adidas running shorts,Running Shorts,Clothing,Adidas
+100,JBL portable speaker,Portable Speaker,Electronics,JBL

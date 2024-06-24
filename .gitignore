@@ -1,0 +1,6 @@
+# .gitignore
+venv/
+openai_project_venv/
+.env
+__pycache__/
+*.pyc
