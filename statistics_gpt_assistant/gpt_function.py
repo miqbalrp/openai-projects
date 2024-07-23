@@ -37,9 +37,6 @@ def get_suggested_method():
     Make sure the suggested method is clear, for example if it's t-test, we should know is it an independent or pair-wise, one-tail or two tail, etc.
     If you need more clarification, please put "NEED_CLARIFICATION" as method.
     """
-
-    messages = []
-    messages.append({"role": "system", "content": system_content})
     
     # Initial objective
     user_objective = input("[USER] Input your analysis objective: ")
@@ -171,3 +168,29 @@ def get_dataset_structure(method):
         raise ValueError("Unsupported method")
     
     return structure, data
+
+def upload_dataset(method):
+    try:
+        structure, example = get_dataset_structure(method=method)
+        print(f"[ASSISTANT] Data structure : {structure}")
+        print("[ASSISTANT] Please follow below example :")
+        print(f"==================== \n{example}\n ====================")
+
+    except ValueError:
+        print("[ASSISTANT] The method is unsupported")
+
+
+    is_confirmed_dataset = "N"
+
+    while is_confirmed_dataset == "N":
+        print("[ASSISTANT] Select the file contain your dataset: ")
+        csv_file_path = select_file()
+        if csv_file_path:
+            # Load the CSV file into a pandas DataFrame
+            df = pd.read_csv(csv_file_path)
+            print("[ASSISTANT] Below is your dataset sample:")
+            print(f"====================\n{df.head()}\n====================")
+
+            is_confirmed_dataset = input("[USER] Confirm the dataset is correct and follow the instruction [y/N]: ")
+    
+    return df
