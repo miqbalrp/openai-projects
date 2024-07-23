@@ -238,6 +238,7 @@ if __name__ == "__main__":
     You are a statistics expert that will help the user to determine what assumption test that need to be conducted based on the statistics method that will be conducted.
     Return only the assumption testing is required. Multiple function is allowed.
     From the sample dataset, you need to determine the input value of the function.
+    Summarize the result after the function has been run.
     """
 
     tools = [
@@ -302,12 +303,46 @@ if __name__ == "__main__":
         },
     ]
 
+    available_tools = {
+        'check_normality': check_normality,
+        'check_normality_of_groups': check_normality_of_groups,
+        'check_homogeneity_of_variances': check_homogeneity_of_variances
+    }
+
     messages = []
     messages.append({"role": "system", "content": system_content})
     messages.append({"role": "user", "content": f"The method that will be implement is: {method}. The sample of the dataset: \n {str(df.sample(5))}"})
     chat_completion = chat_completion_request(messages, tools=tools, tool_choice="auto")
     assistant_message = chat_completion.choices[0].message
 
-    for tool_call in assistant_message.tool_calls:
-        print(tool_call.function.name)
+    messages.append(assistant_message)
 
+    if assistant_message.tool_calls:
+        print("[ASSISTANT] Below is the list of assumption testing: \n")
+        for tool_call in assistant_message.tool_calls:
+            print(tool_call.function.name)
+        proceed_assumption_testing = input("[USER_INPUT] Proceed the assumption testing? ")
+    else:
+        print("[ASSISTANT] No assumption testing is required")
+        proceed_assumption_testing = 'N'
+
+    if proceed_assumption_testing=='y':
+        function_responses = []
+        for tool_call in assistant_message.tool_calls:
+            function_name = tool_call.function.name
+            function_args = json.loads(tool_call.function.arguments)
+
+            function_response = available_tools[function_name](data=df, **function_args)
+            function_responses.append(function_response)
+            
+            messages.append({
+                "role": "tool",
+                "content": function_response['text'],
+                "tool_call_id": tool_call.id,
+            })
+
+        # Call the model again to summarize the results
+        chat_completion = chat_completion_request(messages)
+        assistant_message = chat_completion.choices[0].message.content
+
+        print(f"[ASSISTANT] {assistant_message}")
