@@ -317,16 +317,23 @@ if __name__ == "__main__":
 
     messages.append(assistant_message)
 
-    if assistant_message.tool_calls:
-        print("[ASSISTANT] Below is the list of assumption testing: \n")
-        for tool_call in assistant_message.tool_calls:
-            print(tool_call.function.name)
-        proceed_assumption_testing = input("[USER_INPUT] Proceed the assumption testing? ")
-    else:
-        print("[ASSISTANT] No assumption testing is required")
-        proceed_assumption_testing = 'N'
+    def confirm_assumption_testing(assistant_message):
+        if assistant_message.tool_calls:
+            print("[ASSISTANT] Below is the list of assumption testing: \n")
+            for tool_call in assistant_message.tool_calls:
+                print(tool_call.function.name)
+            input_text = ''
+            while input_text not in ['y', 'N']:
+                input_text = input("[USER_INPUT] Proceed the assumption testing? [y/N]")
+                if input_text=='y': return True
+                elif input_text=='N': return False
+        else:
+            print("[ASSISTANT] No assumption testing is required")
+        return False
 
-    if proceed_assumption_testing=='y':
+    proceed_assumption_testing = confirm_assumption_testing(assistant_message)
+
+    if proceed_assumption_testing==True:
         function_responses = []
         for tool_call in assistant_message.tool_calls:
             function_name = tool_call.function.name
@@ -343,6 +350,4 @@ if __name__ == "__main__":
 
         # Call the model again to summarize the results
         chat_completion = chat_completion_request(messages)
-        assistant_message = chat_completion.choices[0].message.content
-
-        print(f"[ASSISTANT] {assistant_message}")
+        assistant_message = chat_completion.choices[0].message
